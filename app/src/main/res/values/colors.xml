@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#08f20c</color>
+    <color name="grey_transparent_20">#20606060</color>
+    <color name="background_app_color">#ffffff</color>
+    <color name="text_color_light_grey">#dedede</color>
+    <color name="black_transparent_50">#50000000</color>
+    <color name="grey_transparent_50">#50606060</color>
+    <color name="white">#ffffff</color>
+    <color name="background_fragment_conversation">#2b2a2a</color>
+</resources>

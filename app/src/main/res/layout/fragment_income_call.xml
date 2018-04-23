@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/fragmentIncomeCall"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_info_about_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/action_bar_height"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/also_in_call_text_left_right_padding"
+        android:paddingRight="@dimen/also_in_call_text_left_right_padding">
+
+        <ImageView
+            android:id="@+id/image_caller_avatar"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:padding="24dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_person_big"/>
+
+
+        <TextView
+            android:id="@+id/text_caller_name"
+            style="@style/WrapContent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingTop="20dp"
+            android:textColor="#1f1f1f"
+            android:textSize="22sp"
+            tools:text="Very long opponent's User Name"/>
+
+        <TextView
+            android:id="@+id/call_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_incoming_audio_call"
+            android:textColor="#6e6e6e"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/text_also_on_call"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="@string/also_on_call"
+            android:textColor="#6e6e6e"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/text_other_inc_users"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#1f1f1f"
+            android:textSize="16sp"
+            tools:text="@string/user_list_on_call"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/image_button_reject_call"
+            android:layout_width="@dimen/call_buttons_diameter"
+            android:layout_height="@dimen/call_buttons_diameter"
+            android:scaleType="centerCrop"
+            android:padding="@dimen/call_buttons_padding"
+            android:background="@drawable/selector_call_end"
+
+            android:src="@drawable/ic_phone_hangup"/>
+
+        <ImageButton
+            android:id="@+id/image_button_accept_call"
+            android:layout_width="@dimen/call_buttons_diameter"
+            android:layout_height="@dimen/call_buttons_diameter"
+            android:scaleType="centerCrop"
+            android:padding="@dimen/call_buttons_padding"
+            android:background="@drawable/selector_call_take"
+            android:layout_marginStart="@dimen/income_call_buttons_margin"
+            android:layout_toEndOf="@id/image_button_reject_call"
+            android:src="@drawable/ic_call_take"
+            tools:ignore="RtlCompat"/>
+
+    </RelativeLayout>
+</RelativeLayout>
